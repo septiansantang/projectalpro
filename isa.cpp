@@ -32,7 +32,8 @@ void dijkstra(const vector<vector<int>>& graph, int src, vector<int>& dist, vect
         }
     }
 }
-
+void printPath(int target, const vector<int>& prev);
+// Fungsi untuk mencetak jalur dari simpul asal ke simpul tujuan
 void printPath(int target, const vector<int>& prev) {
     stack<int> path;
     for (int at = target; at != -1; at = prev[at])
